@@ -1,5 +1,8 @@
 <ul class="rooms">
   <li *ngFor="let room of rooms">
     {{ room.name }}
+    <button type="button" (click)="onSelect(room)">Edit</button>
   </li>
 </ul>
+
+<app-room-detail [room]="selectedRoom"></app-room-detail>

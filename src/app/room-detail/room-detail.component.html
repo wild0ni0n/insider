@@ -1,0 +1,15 @@
+<div *ngIf="room">
+  <h2>{{ room.name | uppercase }}</h2>
+  <div>
+    <span>id: </span>
+    {{ room.id }}
+  </div>
+  <div>
+    <label for="room-name">Room name: </label>
+    <input id="room-name" [(ngModel)]="room.name" placeholder="Room Name" />
+  </div>
+  <div>
+    <label for="room-pass">Room pass: </label>
+    <input id="room-pass" [(ngModel)]="room.pass" placeholder="Room Pass" />
+  </div>
+</div>
